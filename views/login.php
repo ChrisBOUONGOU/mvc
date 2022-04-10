@@ -1,9 +1,10 @@
 <?php
 
 /** @var $model \app\models\User */
+$this->title = 'Login';
 ?>
 <h1>Login</h1>
-<?php $form =  \kurisushinjiro\phpmvc\form\Form::begin('', "post"); ?>
+<?php $form =  \app\core\form\Form::begin('', "post"); ?>
 
 <div class="row">
 
@@ -12,4 +13,4 @@
     <button class="btn btn-primary">Submit</button>
 </div>
 
-<?php \kurisushinjiro\phpmvc\form\Form::end() ?>
+<?php \app\core\form\Form::end() ?>

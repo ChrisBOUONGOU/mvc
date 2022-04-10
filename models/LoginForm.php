@@ -3,8 +3,8 @@
 
 namespace app\models;
 
-use kurisushinjiro\phpmvc\Application;
-use kurisushinjiro\phpmvc\Model;
+use app\core\Application;
+use app\core\Model;
 
 /**
  * Class LoginForm

@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use kurisushinjiro\phpmvc\UserModel;
+use app\core\UserModel;
 
 /**
  * Class User

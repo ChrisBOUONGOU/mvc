@@ -1,12 +1,13 @@
 <?php
 
 /** @var $model \app\models\User */
+$this->title = 'Register';
 
 ?>
 
 <h1>Create an account</h1>
 
-<?php $form =  \kurisushinjiro\phpmvc\form\Form::begin('', "post"); ?>
+<?php $form =  \app\core\form\Form::begin('', "post"); ?>
 
 <div class="row">
     <div class="col">
@@ -22,4 +23,4 @@
     <button class="btn btn-primary">Submit</button>
 </div>
 
-<?php \kurisushinjiro\phpmvc\form\Form::end() ?>
+<?php \app\core\form\Form::end() ?>

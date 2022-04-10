@@ -2,11 +2,11 @@
 
 namespace app\controllers;
 
-use kurisushinjiro\phpmvc\Application;
-use kurisushinjiro\phpmvc\Controller;
-use kurisushinjiro\phpmvc\middlewares\AuthMiddleware;
-use kurisushinjiro\phpmvc\Request;
-use kurisushinjiro\phpmvc\Response;
+use app\core\Application;
+use app\core\Controller;
+use app\core\middlewares\AuthMiddleware;
+use app\core\Request;
+use app\core\Response;
 use app\models\LoginForm;
 use app\models\User;
 
@@ -34,7 +34,7 @@ class AuthController extends Controller
                 return;
             }
         }
-        $this->setLayout('auth');
+
         return $this->render('login', [
             'model' => $loginForm
         ]);
@@ -57,7 +57,7 @@ class AuthController extends Controller
             ]);
         }
 
-        $this->setLayout('auth');
+
         return $this->render('register', [
             'model' => $user
         ]);

@@ -2,7 +2,7 @@
 
 namespace app\models;
 
-use kurisushinjiro\phpmvc\Model;
+use app\core\Model;
 
 /**
  * Class ContactForm

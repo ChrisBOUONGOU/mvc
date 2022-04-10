@@ -28,7 +28,7 @@
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                 </ul>
-                <?php if (kurisushinjiro\phpmvc\Application::isGuest()) : ?>
+                <?php if (app\core\Application::isGuest()) : ?>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="/login">Login</a>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="/profile">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/logout">Welcome <?php echo kurisushinjiro\phpmvc\Application::$app->user->getDisplayName() ?>
+                            <a class="nav-link" href="/logout">Welcome <?php echo app\core\Application::$app->user->getDisplayName() ?>
                                 (Logout)
 
                             </a>
@@ -56,11 +56,11 @@
     <div class="container">
         <?php
 
-        if (kurisushinjiro\phpmvc\Application::$app->session->getFlash('success')) :
+        if (app\core\Application::$app->session->getFlash('success')) :
 
         ?>
             <div class="alert alert-success">
-                <?php echo kurisushinjiro\phpmvc\Application::$app->session->getFlash('success') ?>
+                <?php echo app\core\Application::$app->session->getFlash('success') ?>
             </div>
         <?php endif; ?>
         {{content}}
